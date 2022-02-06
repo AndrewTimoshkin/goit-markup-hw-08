@@ -1,0 +1,47 @@
+.checkbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.policy-condition {
+    font-size: 14px;
+    line-height: calc(24/12);
+    letter-spacing: 0.03em;
+
+    color: #757575;
+    display: flex;
+    align-items: center;
+}
+.policy-condition::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid  #212121;
+    border-radius: 2px;
+    margin-right: 8.38px;
+}
+.policy-condition-check:checked+.policy-condition::before {
+    border:none;
+    background-image: url(../images/iсons/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.policy-link {
+    text-decoration: none;
+    color:var(--hovercolor);
+    text-decoration-line: underline;
+    margin-left: 4px;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}

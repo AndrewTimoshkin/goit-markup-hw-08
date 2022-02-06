@@ -1,0 +1,10 @@
+.section-list {
+    text-decoration: none;
+    list-style: none;
+
+    margin-top: 50px;
+    display: flex;
+    &-item:not(:last-child) {
+        margin-right: 30px;
+    }
+}

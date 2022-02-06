@@ -1,0 +1,66 @@
+// MAIN RULES
+@import "./utils/variables";
+@import "./base/resets";
+@import "./base/base-container";
+@import "./base/base-section";
+// SITE HEADER & FOOTER LOGO (INDEX PAGE)
+@import "./components/logo";
+// SITE HEADER & FOOTER CONTACTS (INDEX PAGE)
+@import "./components/site-contacts";
+// SITE HEADER (INDEX PAGE)
+@import "./layouts/header-container";
+@import "./components/site-navigation";
+@import "./components/current-page";
+// HERO (INDEX PAGE)
+@import "./components/index-hero";
+@import "./components/index-hero-text";
+@import "./components/_button";
+@import "./components/index-hero-service-btn";
+// BENEFITS (INDEX PAGE)
+@import "./layouts/index-benefits-section";
+@import "./components/index-benefits-list";
+@import "./components/index-benefits-texts";
+@import "./components/index-benefits-icon";
+// HEADING FOR UNDER BENEFITS, TEAM, CLIENTS (INDEX PAGE)
+@import "./components/index-section-head-texts";
+// MAIN LIST FOR UNDER BENEFITS & TEAM (INDEX PAGE)
+@import "./components/index-section-main-lists";
+// UNDER BENEFITS (INDEX PAGE)
+@import "./layouts/index-under-benefits-secton";
+@import "./components/index-under-benefits-list-block";
+@import "./components/index-under-benefits-list-block-text";
+// TEAM (INDEX PAGE)
+@import "./layouts/index-team-section";
+@import "./components/index-team-list-item";
+@import "./components/index-team-list-item-texts";
+@import "./components/index-team-list-item-networks";
+// CLIENTS (INDEX PAGE)
+@import "./layouts/index-clients-section";
+@import "./components/index-clients-list";
+@import "./components/index-clients-link";
+// SITE FOOTER
+@import "./layouts/footer-container";
+@import "./layouts/footer-sections";
+@import "./components/footer-sections-headers";
+@import "./components/footer-join-list";
+@import "./components/footer-join-list-item";
+@import "./components/footer-mailing-request-form";
+@import "./components/footer-mailing-request-field";
+@import "./components/footer-mailing-request-submit-btn";
+// MODAL WINDOW (INDEX PAGE)
+@import "./layouts/backdrop-container";
+@import "./layouts/modal-window-container";
+@import "./components/modal-window-close-btn";
+@import "./components/modal-window-title-text";
+@import "./components/modal-window-data-field";
+@import "./components/modal-window-feedback-field";
+@import "./components/modal-window-policy-checkbox";
+@import "./components/modal-window-submit-data-btn";
+// PORTFOLIO PAGE
+@import "./layouts/portfolio-container";
+@import "./layouts/portfolio-menu-section";
+@import "./components/portfolio-menu-list";
+@import "./components/portfolio-menu-list-item";
+@import "./components/portfolio-works-list";
+@import "./components/portfolio-works-list-item";
+@import "./components/portfolio-works-list-texts";
