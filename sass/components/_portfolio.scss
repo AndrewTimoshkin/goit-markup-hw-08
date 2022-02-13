@@ -1,0 +1,183 @@
+.portfolio-main .container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+@media screen and (min-width:1200px) {
+    .portfolio-main .container{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+.portfolio-menu {
+    margin-bottom: 40px;
+}
+@media screen and (min-width:768px) {
+    .portfolio-menu {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .portfolio-menu {
+        margin-bottom: 50px;
+    }
+}
+
+.list {
+    background: var(--backgroundcolor);
+}
+.portfolio-menu .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media  screen and (min-width:768px) {
+    .portfolio-menu .list {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+.list-item {
+    font-family:inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--textcolor-2);
+    background: var(--backgroundcolor-3);
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;  
+
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+
+    transition-property: color, background, box-shadow, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-item:hover,
+.list-item:focus {
+    background: var(--hovercolor);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: var(--textcolor-1);
+    cursor: pointer;
+}
+.list-item-parent:not(:last-child) {
+    margin-right: 8px;
+}
+.list-item-parent:nth-child(-n+2) {
+    margin-bottom: 15px;
+}
+@media screen and (min-width:768px) {
+    .list-item-parent:nth-child(-n+2) {
+        margin-bottom: 0;
+    }
+}
+
+.list-portfolio {  
+    background: var(--backgroundcolor);
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+
+    margin-bottom: 30px;
+    width: 450px;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-portfolio:hover,
+.list-portfolio:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.list-portfolio:nth-child(3n) {
+    margin-right: 0;
+}
+@media screen and (min-width:768px) {
+    .portfolio-works .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .list-portfolio {  
+        width: 354px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .list-portfolio {  
+        width: 370px;
+    }  
+}
+.portfolio-link {
+    text-decoration: none;
+}
+.list-portfolio__item-img {
+    width: 448px;
+}
+@media screen and (min-width:768px) {
+    .list-portfolio__item-img {
+        width: 352px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .list-portfolio__item-img {
+        width: 368px;
+        height: 294px;
+    }
+}
+
+    /* PORTFOLIO WORKS NAME & DESCRIPTION */
+.list-portfolio-section {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+
+}
+.list-portfolio-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--textcolor-2);
+
+    margin-bottom: 4px;
+}
+.list-portfolio-item {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--headercolor);
+}
+    /* PORTFOLIO WORKS ADD TEXT */
+.list-portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+}
+.list-portfolio:hover .list-portfolio-description,
+.list-portfolio:focus .list-portfolio-description {
+    transform: translateY(0);
+}
+.list-portfolio-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+    padding: 63px 24px;
+
+    height: 100%;
+    transform: translateY(101%);
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

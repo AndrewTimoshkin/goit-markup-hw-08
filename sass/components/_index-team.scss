@@ -1,0 +1,95 @@
+.team-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background: var(--backgroundcolor-3);
+}
+@media screen and (min-width:1200px) {
+    .team-section {
+        padding-top: 94px;
+        padding-bottom: 94px; 
+    }
+}
+.section-list-item--decoration {
+    background: var(--backgroundcolor);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    padding-bottom: 24px;
+}
+
+@media screen and (min-width:1200px) {
+    .section-list-item--decoration {
+        padding-bottom: 30px;
+    } 
+}
+
+.section-list__member-photo {
+    width: 450px;
+}
+@media screen and (min-width:768px) {
+    .section-list__member-photo {
+        width: 354px;
+    } 
+}
+@media screen and (min-width:1200px) {
+    .section-list__member-photo {
+        width: 270px;
+    } 
+}
+.section-list__member-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--textcolor-2);  
+
+    margin-top: 30px;
+}
+.section-list__member-position {
+    font-size: 16px;
+    line-height: 1.188;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--headercolor);
+    margin-top: 10px;
+}
+.network-list {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 16px;
+}
+.network-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+.network-list__link {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    color: #AFB1B8;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.network-list__link:hover,
+.network-list__link:focus {
+        background-color: var(--hoverbackground);
+        color: var(--textcolor-1);
+    }
+
+.network-list__icon {
+    fill: currentColor;
+}
