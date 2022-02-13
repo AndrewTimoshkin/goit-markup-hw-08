@@ -1,0 +1,9 @@
+.clients-list {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 50px;
+}
+.clients-list__item:not(:last-child) {
+    margin-right: 30px;
+}

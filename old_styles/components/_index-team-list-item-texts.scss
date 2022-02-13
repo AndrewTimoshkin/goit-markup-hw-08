@@ -1,0 +1,22 @@
+.section-list__member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--textcolor-2);  
+
+    margin-top: 30px;
+}
+.section-list__member-position {
+    font-size: 16px;
+    line-height: 1.188;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--headercolor);
+    margin-top: 10px;
+}
