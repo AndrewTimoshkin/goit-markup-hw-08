@@ -58,10 +58,11 @@ ul, li {
         -ms-flex-pack: justify;
             justify-content: space-between;
     min-height: 60px;
+    width: 480px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -70,6 +71,20 @@ ul, li {
         -ms-flex-align: center;
             align-items: center;
     min-height: 80px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 80px;
+    width: 1200px;
   }
 }
 
@@ -551,12 +566,23 @@ ul, li {
 .benefits {
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 480px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 0;
+    width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .benefits {
     padding-top: 94px;
     padding-bottom: 0;
+    width: 1200px;
   }
 }
 
@@ -581,6 +607,12 @@ ul, li {
   text-transform: uppercase;
   color: var(--textcolor-2);
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list__item-title {
+    text-align: left;
+  }
 }
 
 .benefits-list__item-text {
@@ -656,6 +688,8 @@ ul, li {
   display: none;
   padding-top: 94px;
   padding-bottom: 94px;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -768,12 +802,21 @@ ul, li {
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--backgroundcolor-3);
+  width: 480px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .team-section {
+    width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .team-section {
     padding-top: 94px;
     padding-bottom: 94px;
+    width: 1200px;
   }
 }
 
@@ -876,12 +919,23 @@ ul, li {
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
+  width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .clients {
     padding-top: 94px;
     padding-bottom: 94px;
+    width: 1200px;
   }
 }
 
@@ -984,11 +1038,12 @@ ul, li {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer .container {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    max-width: 768px;
   }
 }
 
@@ -997,6 +1052,7 @@ ul, li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    max-width: 1200px;
   }
 }
 
