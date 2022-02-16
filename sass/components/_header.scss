@@ -297,8 +297,12 @@
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
 }    
+.mob-element {
+    display: block;
+}
 .contact-list__item-cell{
     display: block;
     font-weight: 500;
